@@ -1,3 +1,38 @@
+📌 Pastebin-Lite
+
+Pastebin-Lite is a full-stack web application that allows users to create and share text pastes with expiry time (TTL) and maximum view limits, similar to Pastebin but in a simplified form.
+Deployed URL (Vercel):
+👉 https://pastebin-lite-puce-five.vercel.app
+Source Code:
+👉 https://github.com/sreyachaithu/pastebin-lite
+🛠️ Tech Stack
+
+Frontend: Next.js (App Router), React, TypeScript
+
+Backend: Next.js API Routes (Route Handlers)
+
+Database: PostgreSQL (Neon)
+
+ORM: Prisma
+
+Styling: Tailwind CSS
+
+Deployment: Vercel
+
+🔄 Application Flow
+
+User enters text, TTL, and max views
+
+Frontend sends a POST request to /api/pastes
+
+Paste is stored in the database using Prisma
+
+A unique URL is generated
+
+Users can access the paste via the URL
+
+Paste automatically expires after TTL or max views
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
